@@ -6,7 +6,7 @@ const PurifyCSSPlugin = require('purifycss-webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-let destinationFolder = 'devbuild';
+let destinationFolder = 'dev';
 
 if (process.env.NODE_ENV === 'production') {
     destinationFolder = 'dist';
@@ -24,10 +24,10 @@ module.exports = {
     output: {
         // options related to how webpack emits results
 
-        path: path.resolve(__dirname, destinationFolder), // string
+        path: path.resolve(__dirname, destinationFolder),
         // the target directory for all output files
 
-        filename: "scripts/[name].[chunkhash].js" // string
+        filename: "scripts/[name].[chunkhash].js"
         // the filename template for entry chunks
     },
 
@@ -81,7 +81,7 @@ module.exports = {
         })
     ],
     devServer: {
-        contentBase: path.join(__dirname, "devbuild"),
+        contentBase: path.join(__dirname, destinationFolder),
         compress: true,
         port: 8080
     }
