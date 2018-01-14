@@ -27,6 +27,8 @@ module.exports = {
         path: path.resolve(__dirname, destinationFolder),
         // the target directory for all output files
 
+        publicPath: '/',
+
         filename: "scripts/[name].[chunkhash].js"
         // the filename template for entry chunks
     },
@@ -52,7 +54,8 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            name: 'img/[name].[ext]'
+                            name: '[name].[ext]',
+                            outputPath: 'img/'
                         }
                     }
                 ]
