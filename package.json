@@ -13,7 +13,7 @@
     "url": "git@github.com:KerimG/webpack-es6-sass-starter-pack.git"
   },
   "keywords": ["webpack", "es6", "starter pack"],
-  "author": "Kerim G. kerim@gueney.org (https://gueney.io)",
+  "author": "Kerim G. kerim@gueney.org (https://gueney.org)",
   "license": "MIT",
   "devDependencies": {
     "ajv": "^6.2.1",
