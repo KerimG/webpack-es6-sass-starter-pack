@@ -4,7 +4,7 @@
   "description": "Kerim's Personal webpack starter",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server",
     "dist": "cross-env NODE_ENV=production webpack -p",
     "watch": "webpack --watch"
   },
@@ -42,5 +42,8 @@
     "webpack": "^4.4.1",
     "webpack-cli": "^2.0.13",
     "webpack-dev-server": "^3.1.1"
+  },
+  "dependencies": {
+    "cross-env": "^5.1.4"
   }
 }

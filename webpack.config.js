@@ -12,6 +12,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 const config = {
+  mode: process.env.NODE_ENV,
   entry: {
     app: ["./src/js/app.js", "./src/style/main.scss"]
   },
